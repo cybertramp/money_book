@@ -17,6 +17,8 @@
 def funcParseDash(lst):
 	lst_len = 0
 	lst_len = len(lst)
+
+	# reverse repeat(prevent out of range)
 	for element in range(lst_len-1,0,-1):
 		if(lst[element] == "---"):
 			lst.remove(lst[element])
