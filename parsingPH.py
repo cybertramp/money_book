@@ -49,18 +49,16 @@ if __name__ == "__main__":
 	data = ["abc","---","567","---","555","---","edf"]
 	
 	# data variable define
-	data_removedDash = ""
 	data_onlyENG = ""
 	data_onlyNUM = ""
 	
 	# parsing
-	data_removedDash = funcParseDash(data)
-	print(data_removedDash)
-	data_onlyNUM = funcParseDigit(data_removedDash)
-	data_onlyENG = funcParseENG(data_removedDash)
+	data = funcParseDash(data)
+	data_onlyNUM = funcParseDigit(data)
+	data_onlyENG = funcParseENG(data)
 
 	# print converted data
-	print(data_removedDash)
+	print(data)
 	print(data_onlyNUM)
 	print(data_onlyENG)
 
